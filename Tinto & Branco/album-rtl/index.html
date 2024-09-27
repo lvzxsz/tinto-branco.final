@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" href="img/tintao mane.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Tinto & Branco</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+        }
+
+        /* Configuração do vídeo para ocupar toda a tela */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .content-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Mudei para flex-start para posicionar o conteúdo mais acima */
+            height: 100vh; /* Ajusta a altura para 100% da tela */
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding-top: 50px; /* Adiciona um espaço superior */
+        }
+
+        .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        /* Título principal */
+        h1 {
+            color: white;
+            font-weight: 700; /* Peso mais pesado */
+            font-size: 3em; /* Tamanho maior */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para melhor visibilidade */
+        }
+
+        /* Estilo do subtítulo */
+        h2 {
+            color: white;
+            font-weight: 600; /* Peso um pouco mais leve que o título principal */
+            font-size: 2em; /* Tamanho um pouco menor que o título */
+            margin: 20px 0; /* Margem superior e inferior */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para melhor visibilidade */
+        }
+
+        /* Estilo dos botões */
+        .btn-custom {
+            margin: 10px; /* Espaçamento entre os botões */
+            padding: 10px 20px; /* Tamanho do botão */
+            font-size: 1.2em; /* Tamanho da fonte */
+            color: white; /* Cor do texto dos botões */
+            border: none; /* Remove a borda padrão */
+            background-color: #9B1B30; /* Tom vinho para todos os botões */
+        }
+
+        
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar .nav-link {
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html"><img src="img/tintao mane.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre.html">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="vinhos.html">Vinhos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <video class="video-background" autoplay loop muted>
+        <source src="img/67396-522626719_small.mp4" type="video/mp4">
+    </video>
+
+    <div class="content-wrapper">
+        <div class="content">
+            <img src="img/tintao mane.png" alt="Logo Tinto & Branco" class="logo">
+            <h1>Bem-vindo a Tinto & Branco</h1>
+            <h2>Nossos Vinhos</h2>
+            <div>
+                <a href="tinto.html" class="btn btn-custom">Tinto</a>
+                <a href="branco.html" class="btn btn-custom">Branco</a>
+                <a href="rose.html" class="btn btn-custom">Rosé</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

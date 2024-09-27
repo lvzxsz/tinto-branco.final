@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="icon" href="img/tintao mane.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinto & Branco - Vinhos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilo global */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Navbar fixa no topo */
+        .navbar {
+            background-color: #343a40;
+            position: fixed; /* Fixa a navbar */
+            top: 0; /* Fixa no topo */
+            width: 100%; /* Largura total */
+            z-index: 1000; /* Fica acima de outros elementos */
+        }
+
+        .navbar .navbar-brand img {
+            max-width: 120px;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ddd;
+        }
+
+        /* Espaço para a navbar fixa */
+        .navbar-space {
+            height: 70px; /* Altura da navbar */
+        }
+
+        /* Estilos para as imagens das cartas */
+        .card-img-top {
+            height: 200px; /* Defina uma altura fixa para as imagens */
+            object-fit: contain; /* Ajusta a imagem sem cortá-la */
+            width: 100%; /* Garante que a imagem ocupe toda a largura */
+        }
+
+        .btn-vinho {
+            background-color: #7C1A1A; /* Cor de vinho */
+            color: white; /* Texto branco */
+            border: none; /* Remove borda */
+        }
+
+        .btn-vinho:hover {
+            background-color: #9B2C2C; /* Cor mais clara ao passar o mouse */
+            color: white; /* Mantém o texto branco */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Espaço para a navbar fixa -->
+    <div class="navbar-space"></div>
+
+    <!-- Navbar fixa no topo -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html"><img src="img/tintao mane.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre.html">Sobre Nós</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="vinhos.html">Vinhos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="sobre" class="text-center my-5" style="padding-top: 80px;">
+        <div class="container">
+            <h2 class="my-4">Vinhos Tinto</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/tintao 1 xD.jfif" class="card-img-top" alt="Vinho Tinto Fino Seco Cabernet Sauvignon">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Pomerol Château La Fleur</h5>
+                            <p class="card-text">R$ 1.500,00</p>
+                            <button class="btn btn-vinho">Compre Agora</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/tinto 2 de fato.png" class="card-img-top" alt="Outro Vinho Tinto">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Barolo Giacomo Conterno</h5>
+                            <p class="card-text">R$ 1.800,00</p>
+                            <button class="btn btn-vinho">Compre Agora</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/tinto 3.jfif" class="card-img-top" alt="Mais um Vinho Tinto">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tenuta dell'Ornellaia Ornellaia</h5>
+                            <p class="card-text">R$ 2.200,00</p>
+                            <button class="btn btn-vinho">Compre Agora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="my-4">Vinhos Rosé</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/rose2.jpeg" class="card-img-top" alt="Vinho Casal Garcia Rosé">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Vinho Casal Garcia Rosé</h5>
+                            <p class="card-text">R$ 1.250,00</p>
+                            <button class="btn btn-vinho">Compre Agora</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/rose 3.jfif" class="card-img-top" alt="Arte Viva Vinho Rosé Juju 2021">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Arte Viva Vinho Rosé Juju 2021</h5>
+                            <p class="card-text">R$ 2.000,00</p>
+                            <button class="btn btn-vinho">Compre Agora</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/rose.jfif" class="card-img-top" alt="Vinho Frisante Rosé">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Vinho Frisante Rosé Del Grano</h5>
+                            <p class="card-text">R$ 1.020,00</p>
+                            <button class="btn btn-vinho">Compre Agora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="my-4">Vinhos Branco</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/branco1.jfif" class="card-img-top" alt="Frisante Casa Valduga Naturelle Branco Suave">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Frisante Casa Valduga Naturelle</h5>
+                            <p class="card-text">R$ 1.253,00</p>
+                            <button class="btn btn-vinho">Compre Agora</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/branco2.jfif" class="card-img-top" alt="Outro Vinho Branco">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Chardonnay Viña Cantaluna</h5>
+                            <p class="card-text">R$ 1.350,00</p>
+                            <button class="btn btn-vinho">Compre Agora</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/branco 3 xD.jpg" class="card-img-top" alt="Mais um Vinho Branco">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Vinho Português Adegamãe</h5>
+                            <p class="card-text">R$ 1.080,00</p>
+                            <button class="btn btn-vinho">Compre Agora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <footer class="bg-dark text-light text-center py-4">
+        <p>&copy; 2024 Tinto & Branco. Todos os direitos reservados.</p>
+        <ul class="list-unstyled d-flex justify-content-center">
+            <li class="mx-3"><a href="index.html" class="text-light">Home</a></li>
+            <li class="mx-3"><a href="sobre.html" class="text-light">Sobre Nós</a></li>
+            <li class="mx-3"><a href="contato.html" class="text-light">Contato</a></li>
+        </ul>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" href="img/tintao mane.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinto & Branco</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Navbar fixa no topo */
+        .navbar {
+            background-color: #343a40;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar-space {
+            height: 70px; /* Altura da navbar */
+        }
+
+        .navbar .navbar-brand img {
+            max-width: 120px;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ddd;
+        }
+
+        .card {
+            height: 100%;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .image-wrapper img {
+            height: 650px; /* Ajusta a altura das imagens para 400px */
+            object-fit: cover;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Espaço para a navbar fixa -->
+    <div class="navbar-space"></div>
+
+    <!-- Navbar fixa no topo -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html"><img src="img/tintao mane.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre.html">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="vinhos.html">Vinhos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="sobre" class="text-center my-5">
+        <div class="container">
+            <h2 class="my-4">Vinhos Tinto</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/tintao 1 xD.jfif" class="card-img-top" alt="Vinho Tinto Fino Seco Cabernet Sauvignon">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Pomerol Château La Fleur</h5>
+                            <p class="card-text">R$ 1.500,00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/tinto 2 de fato.png" class="card-img-top" alt="Outro Vinho Tinto">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Barolo Giacomo Conterno</h5>
+                            <p class="card-text">R$ 1.800,00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/tinto 3.jfif" class="card-img-top" alt="Mais um Vinho Tinto">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tenuta dell'Ornellaia Ornellaia</h5>
+                            <p class="card-text">R$ 2.200,00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light text-center py-4">
+        <p>&copy; 2024 Tinto & Branco. Todos os direitos reservados.</p>
+        <ul class="list-unstyled d-flex justify-content-center">
+            <li class="mx-3"><a href="index.html" class="text-light">Home</a></li>
+            <li class="mx-3"><a href="sobre.html" class="text-light">Sobre Nós</a></li>
+            <li class="mx-3"><a href="contato.html" class="text-light">Contato</a></li>
+        </ul>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
